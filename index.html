@@ -2,433 +2,403 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>ALghiffary Animation | Official Website</title>
+<title>ALghiffary Animation | Animasi Lucu dan Unik</title>
 
-<meta name="description" content="ALghiffary Animation - Dunia animasi penuh imajinasi, aksi, kelucuan, karakter, kendaraan, hewan, benda unik dan cerita absurd.">
+<meta name="description" content="ALghiffary Animation menghadirkan animasi lucu, unik, kreatif, kendaraan, karakter, hewan, dan cerita humor yang menghibur.">
+
+<meta name="keywords" content="ALghiffary Animation, animasi lucu, animasi kendaraan, animasi Indonesia, YouTube Shorts, video lucu">
+
+<meta name="robots" content="index,follow">
 
 <style>
+
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 html{
-  scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#eef8ff;
-  color:#152238;
-  line-height:1.6;
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f8fc;
+color:#172033;
+line-height:1.6;
+}
+
+a{
+text-decoration:none;
 }
 
 header{
-  position:sticky;
-  top:0;
-  z-index:99;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:14px 6%;
-  background:#061a38;
-  box-shadow:0 4px 20px #0005;
+background:#071a38;
+position:sticky;
+top:0;
+z-index:100;
+box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+padding:15px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 .logo{
-  color:#fff;
-  font-size:25px;
-  font-weight:900;
+font-size:25px;
+font-weight:bold;
+color:white;
 }
 
 .logo span{
-  color:#ffd21c;
+color:#ffd21c;
 }
 
-nav{
-  display:flex;
-  gap:22px;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-nav a:hover{
-  color:#ffd21c;
-}
-
-.top-btn{
-  background:#ff3030;
-  color:white;
-  padding:10px 18px;
-  border-radius:25px;
-  text-decoration:none;
-  font-weight:bold;
+.subscribe{
+background:#ff3038;
+color:white;
+padding:11px 20px;
+border-radius:30px;
+font-weight:bold;
 }
 
 .hero{
-  min-height:650px;
-  padding:70px 7%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:30px;
-  color:white;
-  background:
-    radial-gradient(circle at 80% 20%,#9beaff,transparent 28%),
-    linear-gradient(135deg,#19b9ff,#0874dc 55%,#073b91);
-  overflow:hidden;
+background:linear-gradient(135deg,#18b9f2,#087de2,#0754bf);
+color:white;
+text-align:center;
+padding:70px 20px 80px;
 }
 
-.hero-content{
-  max-width:650px;
-}
-
-.welcome{
-  color:#ffe000;
-  font-size:22px;
-  font-weight:bold;
+.badge{
+display:inline-block;
+background:rgba(255,255,255,.16);
+padding:8px 16px;
+border-radius:30px;
+margin-bottom:20px;
+font-weight:bold;
 }
 
 .hero h1{
-  font-size:clamp(48px,8vw,88px);
-  line-height:.95;
-  margin:14px 0;
-  text-shadow:5px 6px 0 #07377d;
+font-size:clamp(42px,9vw,75px);
+line-height:1;
+margin-bottom:25px;
+text-shadow:0 7px 0 rgba(0,40,100,.25);
 }
 
 .hero h1 span{
-  color:#ffd21c;
-}
-
-.hero h2{
-  font-size:30px;
-  margin-bottom:15px;
+color:#ffd21c;
 }
 
 .hero p{
-  font-size:18px;
-  max-width:600px;
-  margin-bottom:25px;
+max-width:700px;
+margin:auto;
+font-size:18px;
 }
 
 .buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
 }
 
 .btn{
-  display:inline-block;
-  padding:15px 24px;
-  border-radius:35px;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:17px;
+display:inline-block;
+padding:14px 24px;
+border-radius:30px;
+font-weight:bold;
 }
 
-.youtube{
-  background:#ff3030;
-  color:white;
-  box-shadow:0 7px 18px #0004;
+.red{
+background:#ff3038;
+color:white;
 }
 
-.work{
-  background:white;
-  color:#075bc5;
+.white{
+background:white;
+color:#0754bf;
 }
 
-.characters{
-  font-size:120px;
-  max-width:420px;
-  text-align:center;
-  filter:drop-shadow(0 15px 12px #0004);
+section{
+padding:70px 20px;
 }
 
-.section{
-  padding:65px 7%;
+.container{
+max-width:1100px;
+margin:auto;
 }
 
 .title{
-  text-align:center;
-  margin-bottom:35px;
+text-align:center;
+margin-bottom:40px;
 }
 
 .title h2{
-  color:#075bc5;
-  font-size:40px;
+font-size:38px;
+color:#071a38;
+}
+
+.title span{
+color:#087de2;
 }
 
 .title p{
-  color:#667085;
+color:#667085;
+margin-top:8px;
 }
 
-.categories{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:18px;
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
 }
 
 .card{
-  background:white;
-  padding:25px 15px;
-  border-radius:25px;
-  text-align:center;
-  box-shadow:0 8px 25px #0068b51c;
-  transition:.25s;
+background:white;
+padding:28px 18px;
+text-align:center;
+border-radius:22px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+border:1px solid #e5ebf3;
+transition:.2s;
 }
 
 .card:hover{
-  transform:translateY(-8px);
+transform:translateY(-5px);
 }
 
 .icon{
-  font-size:50px;
+font-size:48px;
+margin-bottom:10px;
 }
 
 .card h3{
-  color:#075bc5;
-  margin:8px 0;
+color:#071a38;
+margin-bottom:7px;
+}
+
+.card p{
+font-size:14px;
+color:#667085;
 }
 
 .videos{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
+background:#eaf4ff;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 }
 
 .video{
-  background:white;
-  overflow:hidden;
-  border-radius:20px;
-  box-shadow:0 8px 22px #0002;
+background:white;
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
-.thumb{
-  height:180px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-size:75px;
-  background:linear-gradient(135deg,#36c7ff,#1768df);
+.thumbnail{
+height:210px;
+background:linear-gradient(135deg,#10b7f0,#1758d8);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:80px;
 }
 
-.video-info{
-  padding:17px;
+.video-content{
+padding:20px;
 }
 
-.video-info h3{
-  margin-bottom:5px;
+.video-content h3{
+color:#071a38;
+margin-bottom:8px;
 }
 
-.video-info a{
-  color:#075bc5;
-  text-decoration:none;
-  font-weight:bold;
+.video-content p{
+font-size:14px;
+color:#667085;
+margin-bottom:15px;
+}
+
+.watch{
+color:#087de2;
+font-weight:bold;
 }
 
 .about{
-  background:white;
-  border-radius:30px;
-  padding:45px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-  align-items:center;
-  box-shadow:0 10px 35px #0068b51c;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
 }
 
-.about-art{
-  min-height:300px;
-  border-radius:25px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-size:130px;
-  background:linear-gradient(135deg,#08a8ff,#063e9c);
+.about-box{
+background:linear-gradient(135deg,#071a38,#0b4e9d);
+color:white;
+padding:45px 25px;
+border-radius:30px;
+text-align:center;
 }
 
-.about h2{
-  color:#075bc5;
-  font-size:38px;
-  margin-bottom:15px;
+.about-icon{
+font-size:75px;
 }
 
-.tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:20px;
+.about-box h2{
+font-size:30px;
 }
 
-.tag{
-  background:#e4f3ff;
-  color:#075bc5;
-  padding:9px 15px;
-  border-radius:20px;
-  font-weight:bold;
+.about-box span{
+color:#ffd21c;
+}
+
+.about-text h2{
+font-size:40px;
+line-height:1.1;
+color:#071a38;
+margin-bottom:15px;
+}
+
+.about-text p{
+color:#667085;
+margin-bottom:20px;
+}
+
+.check{
+background:#eef7ff;
+padding:11px 15px;
+margin:8px 0;
+border-radius:10px;
+font-weight:bold;
 }
 
 .cta{
-  margin:20px 7% 60px;
-  padding:45px 25px;
-  border-radius:30px;
-  text-align:center;
-  color:white;
-  background:linear-gradient(135deg,#075bc5,#00a8ff);
-  box-shadow:0 12px 30px #0068b544;
+padding-top:10px;
 }
 
-.cta h2{
-  font-size:40px;
-  margin-bottom:10px;
+.cta-box{
+background:linear-gradient(135deg,#ff3038,#ff5932);
+color:white;
+text-align:center;
+padding:50px 20px;
+border-radius:30px;
 }
 
-.contact{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:25px;
+.cta-box h2{
+font-size:40px;
+line-height:1.1;
+margin-bottom:15px;
 }
 
-.contact-box{
-  background:white;
-  padding:30px;
-  border-radius:25px;
-  box-shadow:0 8px 25px #0068b51c;
+.cta-box p{
+margin-bottom:25px;
 }
 
-.contact-box h3{
-  color:#075bc5;
-  margin-bottom:10px;
+.cta-box .btn{
+background:white;
+color:#e1262d;
 }
 
 footer{
-  background:#06172f;
-  color:white;
-  text-align:center;
-  padding:40px 20px;
+margin-top:60px;
+background:#071a38;
+color:#b9c8dc;
+text-align:center;
+padding:35px 20px;
 }
 
 .footer-logo{
-  font-size:28px;
-  font-weight:900;
+font-size:23px;
+font-weight:bold;
+color:white;
+margin-bottom:5px;
 }
 
 .footer-logo span{
-  color:#ffd21c;
+color:#ffd21c;
 }
 
-@media(max-width:900px){
+@media(max-width:800px){
 
-  nav{
-    display:none;
-  }
-
-  .hero{
-    flex-direction:column;
-    text-align:center;
-    padding-top:55px;
-  }
-
-  .hero p{
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .buttons{
-    justify-content:center;
-  }
-
-  .characters{
-    font-size:90px;
-  }
-
-  .categories{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .videos{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .about{
-    grid-template-columns:1fr;
-  }
+.cards{
+grid-template-columns:repeat(2,1fr);
 }
 
-@media(max-width:600px){
-
-  header{
-    padding:13px 5%;
-  }
-
-  .logo{
-    font-size:19px;
-  }
-
-  .top-btn{
-    padding:8px 12px;
-    font-size:13px;
-  }
-
-  .hero{
-    min-height:620px;
-    padding:55px 5%;
-  }
-
-  .hero h1{
-    font-size:52px;
-  }
-
-  .hero h2{
-    font-size:24px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  .characters{
-    font-size:70px;
-  }
-
-  .section{
-    padding:45px 5%;
-  }
-
-  .categories,
-  .videos,
-  .contact{
-    grid-template-columns:1fr;
-  }
-
-  .title h2{
-    font-size:31px;
-  }
-
-  .about{
-    padding:25px;
-  }
-
-  .about h2{
-    font-size:30px;
-  }
-
-  .cta{
-    margin:20px 5% 45px;
-    padding:35px 20px;
-  }
-
-  .cta h2{
-    font-size:29px;
-  }
+.video-grid{
+grid-template-columns:1fr;
 }
+
+.about{
+grid-template-columns:1fr;
+}
+
+.about-text{
+text-align:center;
+}
+
+}
+
+@media(max-width:520px){
+
+.nav{
+padding:12px 14px;
+}
+
+.logo{
+font-size:20px;
+}
+
+.subscribe{
+padding:9px 13px;
+font-size:13px;
+}
+
+.hero{
+padding:55px 15px 65px;
+}
+
+.hero h1{
+font-size:47px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:55px 15px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:32px;
+}
+
+.about-text h2{
+font-size:32px;
+}
+
+.cta-box h2{
+font-size:32px;
+}
+
+}
+
 </style>
 </head>
 
@@ -436,147 +406,365 @@ footer{
 
 <header>
 
-  <div class="logo">
-    ALghiffary <span>Animation</span>
-  </div>
+<div class="nav">
 
-  <nav>
-    <a href="#beranda">Beranda</a>
-    <a href="#video">Video</a>
-    <a href="#tentang">Tentang</a>
-    <a href="#kerjasama">Kerja Sama</a>
-  </nav>
+<a href="#beranda" class="logo">
+ALghiffary <span>Animation</span>
+</a>
 
-  <a class="top-btn"
-     href="https://www.youtube.com/"
-     target="_blank">
-     ▶ Subscribe
-  </a>
+<a
+class="subscribe"
+href="https://www.youtube.com/@ALghiffaryAnimation"
+target="_blank">
+▶ Subscribe
+</a>
+
+</div>
 
 </header>
 
 
 <section class="hero" id="beranda">
 
-  <div class="hero-content">
+<div class="badge">
+✨ SELAMAT DATANG DI ALghiffary Animation
+</div>
 
-    <div class="welcome">
-      ✨ SELAMAT DATANG DI
-    </div>
+<h1>
+Animasi <span>Lucu</span>,<br>
+Unik & Menghibur!
+</h1>
 
-    <h1>
-      ALghiffary<br>
-      <span>Animation</span>
-    </h1>
+<p>
+Nikmati berbagai animasi penuh imajinasi, aksi,
+humor, dan kejutan. Mulai dari kendaraan,
+karakter, hewan, benda unik hingga cerita absurd
+yang bikin penasaran dan ketawa.
+</p>
 
-    <h2>
-      Dunia Animasi Penuh Imajinasi! 😂✨
-    </h2>
+<div class="buttons">
 
-    <p>
-      Nikmati berbagai animasi unik dan menghibur—
-      mulai dari karakter, kendaraan, hewan, benda unik,
-      hingga cerita absurd yang bikin penasaran dan ketawa.
-    </p>
+<a
+class="btn red"
+href="https://www.youtube.com/@ALghiffaryAnimation"
+target="_blank">
+▶ Tonton di YouTube
+</a>
 
-    <div class="buttons">
+<a
+class="btn white"
+href="#video">
+🎬 Lihat Video
+</a>
 
-      <a class="btn youtube"
-         href="https://www.youtube.com/"
-         target="_blank">
-         ▶ Tonton di YouTube
-      </a>
-
-      <a class="btn work"
-         href="#kerjasama">
-         🤝 Kerja Sama
-      </a>
-
-    </div>
-
-  </div>
-
-  <div class="characters">
-    🚚 ✈️ 🐱 🚗
-  </div>
+</div>
 
 </section>
 
 
-<section class="section">
+<section id="animasi">
 
-  <div class="title">
-    <h2>🎬 Dunia ALghiffary Animation</h2>
-    <p>Kreatif • Lucu • Unik • Menghibur</p>
-  </div>
+<div class="container">
 
-  <div class="categories">
+<div class="title">
 
-    <div class="card">
-      <div class="icon">🚗</div>
-      <h3>Kendaraan</h3>
-      <p>Mobil, truk, motor, kapal, pesawat dan lainnya.</p>
-    </div>
+<h2>
+Dunia <span>Animasi</span>
+</h2>
 
-    <div class="card">
-      <div class="icon">🐱</div>
-      <h3>Hewan</h3>
-      <p>Hewan lucu dengan tingkah yang menghibur.</p>
-    </div>
+<p>
+Beragam karakter dan cerita kreatif untuk
+menemani waktu santai.
+</p>
 
-    <div class="card">
-      <div class="icon">🤪</div>
-      <h3>Karakter</h3>
-      <p>Karakter unik dengan ekspresi dan cerita lucu.</p>
-    </div>
+</div>
 
-    <div class="card">
-      <div class="icon">📦</div>
-      <h3>Benda Unik</h3>
-      <p>Benda biasa yang dibuat menjadi luar biasa.</p>
-    </div>
 
-    <div class="card">
-      <div class="icon">😂</div>
-      <h3>Cerita Absurd</h3>
-      <p>Cerita aneh, lucu dan penuh kejutan.</p>
-    </div>
+<div class="cards">
 
-  </div>
+<div class="card">
+
+<div class="icon">🚗</div>
+
+<h3>Kendaraan</h3>
+
+<p>
+Mobil, truk, pesawat, kapal
+dan kendaraan unik lainnya.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">😂</div>
+
+<h3>Humor</h3>
+
+<p>
+Aksi kocak dan cerita absurd
+yang menghibur.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🐻</div>
+
+<h3>Karakter</h3>
+
+<p>
+Karakter unik dengan ekspresi
+dan cerita berbeda.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">✨</div>
+
+<h3>Imajinasi</h3>
+
+<p>
+Ide kreatif yang diwujudkan
+menjadi animasi pendek.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<section class="section" id="video">
+<section class="videos" id="video">
 
-  <div class="title">
-    <h2>▶ Video Terbaru</h2>
-    <p>Jangan sampai ketinggalan animasi terbaru kami!</p>
-  </div>
+<div class="container">
 
-  <div class="videos">
+<div class="title">
 
-    <div class="video">
-      <div class="thumb">🚛</div>
-      <div class="video-info">
-        <h3>Truk Tambang Punya Cerita!</h3>
-        <p>Animasi kendaraan lucu dan seru.</p>
-        <a href="https://www.youtube.com/" target="_blank">▶ Tonton</a>
-      </div>
-    </div>
+<h2>
+Video <span>Terbaru</span>
+</h2>
 
-    <div class="video">
-      <div class="thumb">🚗</div>
-      <div class="video-info">
-        <h3>Mobil Lucu Bikin Heboh!</h3>
-        <p>Cerita pendek penuh kejutan.</p>
-        <a href="https://www.youtube.com/" target="_blank">▶ Tonton</a>
-      </div>
-    </div>
+<p>
+Saksikan Shorts dan animasi
+ALghiffary Animation di YouTube.
+</p>
 
-    <div class="video">
-      <div class="thumb">✈️</div>
-      <div class="video-info">
-        <h3>Pesawat Jangan Terlalu Tinggi!</h3>
-        <p>Animasi absurd yang menghibur.</p>
-        <a
+</div>
+
+
+<div class="video-grid">
+
+
+<div class="video">
+
+<div class="thumbnail">
+🚛
+</div>
+
+<div class="video-content">
+
+<h3>
+Animasi Kendaraan
+</h3>
+
+<p>
+Kendaraan dengan karakter lucu
+dan aksi tidak terduga.
+</p>
+
+<a
+class="watch"
+href="https://www.youtube.com/@ALghiffaryAnimation"
+target="_blank">
+Tonton di YouTube →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="video">
+
+<div class="thumbnail">
+😂
+</div>
+
+<div class="video-content">
+
+<h3>
+Shorts Lucu
+</h3>
+
+<p>
+Cerita singkat, humor,
+ekspresi kocak dan kejutan.
+</p>
+
+<a
+class="watch"
+href="https://www.youtube.com/@ALghiffaryAnimation"
+target="_blank">
+Tonton di YouTube →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="video">
+
+<div class="thumbnail">
+🤖
+</div>
+
+<div class="video-content">
+
+<h3>
+Karakter Unik
+</h3>
+
+<p>
+Tokoh dan benda unik
+menjadi karakter animasi.
+</p>
+
+<a
+class="watch"
+href="https://www.youtube.com/@ALghiffaryAnimation"
+target="_blank">
+Tonton di YouTube →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="tentang">
+
+<div class="container">
+
+<div class="about">
+
+
+<div class="about-box">
+
+<div class="about-icon">
+🎬
+</div>
+
+<h2>
+ALghiffary <span>Animation</span>
+</h2>
+
+<p>
+Creative • Funny • Unique
+</p>
+
+</div>
+
+
+<div class="about-text">
+
+<h2>
+Tempat berkumpulnya
+animasi penuh imajinasi.
+</h2>
+
+<p>
+ALghiffary Animation menghadirkan
+video animasi pendek yang kreatif,
+lucu, unik dan menghibur.
+</p>
+
+<div class="check">
+✅ Animasi pendek dan menghibur
+</div>
+
+<div class="check">
+✅ Karakter dan kendaraan unik
+</div>
+
+<div class="check">
+✅ Cerita kreatif dan humoris
+</div>
+
+<div class="check">
+✅ Konten terbaru di YouTube
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box">
+
+<h2>
+Suka animasi unik dan lucu?
+</h2>
+
+<p>
+Kunjungi channel ALghiffary Animation
+dan temukan Shorts terbaru.
+</p>
+
+<a
+class="btn"
+href="https://www.youtube.com/@ALghiffaryAnimation"
+target="_blank">
+▶ Kunjungi Channel YouTube
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-logo">
+ALghiffary <span>Animation</span>
+</div>
+
+<p>
+© 2026 ALghiffary Animation
+</p>
+
+<p>
+Creative • Funny • Unique
+</p>
+
+</footer>
+
+</body>
+</html>
