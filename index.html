@@ -1,770 +1,334 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<title>ALghiffary Animation | Animasi Lucu dan Unik</title>
-
-<meta name="description" content="ALghiffary Animation menghadirkan animasi lucu, unik, kreatif, kendaraan, karakter, hewan, dan cerita humor yang menghibur.">
-
-<meta name="keywords" content="ALghiffary Animation, animasi lucu, animasi kendaraan, animasi Indonesia, YouTube Shorts, video lucu">
-
-<meta name="robots" content="index,follow">
-
-<style>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ALghiffary Animation | Animasi Lucu & Kreatif</title><meta name="description" content="ALghiffary Animation menghadirkan animasi lucu, kreatif, kendaraan unik, karakter menghibur, dan video Shorts untuk penonton Indonesia maupun dunia."><meta name="keywords" content="ALghiffary Animation, animasi lucu, animasi kendaraan, animasi anak, video lucu, cartoon animation, funny animation, miniature vehicle"><meta name="robots" content="index, follow"><style>
 *{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-html{
-scroll-behavior:smooth;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f4f8fc;
-color:#172033;
-line-height:1.6;
-}
-
-a{
-text-decoration:none;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#0b1020;
+    color:#ffffff;
+    line-height:1.6;
 }
 
 header{
-background:#071a38;
-position:sticky;
-top:0;
-z-index:100;
-box-shadow:0 4px 15px rgba(0,0,0,.2);
-}
-
-.nav{
-max-width:1100px;
-margin:auto;
-padding:15px 20px;
-display:flex;
-align-items:center;
-justify-content:space-between;
+    background:linear-gradient(135deg,#111936,#172b63);
+    padding:18px 15px;
+    text-align:center;
+    border-bottom:2px solid #2e5cff;
 }
 
 .logo{
-font-size:25px;
-font-weight:bold;
-color:white;
+    font-size:28px;
+    font-weight:bold;
+    color:#ffffff;
 }
 
 .logo span{
-color:#ffd21c;
+    color:#54c7ff;
 }
 
-.subscribe{
-background:#ff3038;
-color:white;
-padding:11px 20px;
-border-radius:30px;
-font-weight:bold;
+.tagline{
+    margin-top:5px;
+    font-size:14px;
+    color:#d6e4ff;
 }
 
 .hero{
-background:linear-gradient(135deg,#18b9f2,#087de2,#0754bf);
-color:white;
-text-align:center;
-padding:70px 20px 80px;
-}
-
-.badge{
-display:inline-block;
-background:rgba(255,255,255,.16);
-padding:8px 16px;
-border-radius:30px;
-margin-bottom:20px;
-font-weight:bold;
+    padding:55px 20px;
+    text-align:center;
+    background:
+    radial-gradient(circle at top,#284a9b 0%,#101a38 45%,#0b1020 100%);
 }
 
 .hero h1{
-font-size:clamp(42px,9vw,75px);
-line-height:1;
-margin-bottom:25px;
-text-shadow:0 7px 0 rgba(0,40,100,.25);
+    font-size:36px;
+    margin-bottom:15px;
 }
 
 .hero h1 span{
-color:#ffd21c;
+    color:#54c7ff;
 }
 
 .hero p{
-max-width:700px;
-margin:auto;
-font-size:18px;
+    max-width:700px;
+    margin:auto;
+    color:#d8def0;
+    font-size:16px;
 }
 
 .buttons{
-margin-top:30px;
-display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap;
+    margin-top:25px;
 }
 
 .btn{
-display:inline-block;
-padding:14px 24px;
-border-radius:30px;
-font-weight:bold;
+    display:inline-block;
+    text-decoration:none;
+    padding:13px 22px;
+    margin:5px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.red{
-background:#ff3038;
-color:white;
+.btn-youtube{
+    background:#ff1744;
+    color:white;
 }
 
-.white{
-background:white;
-color:#0754bf;
+.btn-about{
+    background:#ffffff;
+    color:#111936;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    opacity:.9;
 }
 
 section{
-padding:70px 20px;
+    padding:45px 18px;
+    max-width:1100px;
+    margin:auto;
 }
 
-.container{
-max-width:1100px;
-margin:auto;
+.section-title{
+    text-align:center;
+    font-size:26px;
+    margin-bottom:12px;
 }
 
-.title{
-text-align:center;
-margin-bottom:40px;
+.section-title span{
+    color:#54c7ff;
 }
 
-.title h2{
-font-size:38px;
-color:#071a38;
-}
-
-.title span{
-color:#087de2;
-}
-
-.title p{
-color:#667085;
-margin-top:8px;
+.section-text{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 30px;
+    color:#bfc9df;
 }
 
 .cards{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
 }
 
 .card{
-background:white;
-padding:28px 18px;
-text-align:center;
-border-radius:22px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-border:1px solid #e5ebf3;
-transition:.2s;
+    background:#151d35;
+    border:1px solid #283657;
+    border-radius:18px;
+    padding:25px 20px;
+    text-align:center;
+    transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
+    transform:translateY(-5px);
+    border-color:#54c7ff;
 }
 
 .icon{
-font-size:48px;
-margin-bottom:10px;
+    font-size:42px;
+    margin-bottom:12px;
 }
 
 .card h3{
-color:#071a38;
-margin-bottom:7px;
+    margin-bottom:8px;
 }
 
 .card p{
-font-size:14px;
-color:#667085;
-}
-
-.videos{
-background:#eaf4ff;
-}
-
-.video-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-}
-
-.video{
-background:white;
-border-radius:22px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.thumbnail{
-height:210px;
-background:linear-gradient(135deg,#10b7f0,#1758d8);
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:80px;
-}
-
-.video-content{
-padding:20px;
-}
-
-.video-content h3{
-color:#071a38;
-margin-bottom:8px;
-}
-
-.video-content p{
-font-size:14px;
-color:#667085;
-margin-bottom:15px;
-}
-
-.watch{
-color:#087de2;
-font-weight:bold;
+    color:#aeb9d1;
+    font-size:14px;
 }
 
 .about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
+    background:#10172c;
+    border-radius:22px;
+    padding:30px 22px;
 }
 
-.about-box{
-background:linear-gradient(135deg,#071a38,#0b4e9d);
-color:white;
-padding:45px 25px;
-border-radius:30px;
-text-align:center;
-}
-
-.about-icon{
-font-size:75px;
-}
-
-.about-box h2{
-font-size:30px;
-}
-
-.about-box span{
-color:#ffd21c;
-}
-
-.about-text h2{
-font-size:40px;
-line-height:1.1;
-color:#071a38;
-margin-bottom:15px;
-}
-
-.about-text p{
-color:#667085;
-margin-bottom:20px;
-}
-
-.check{
-background:#eef7ff;
-padding:11px 15px;
-margin:8px 0;
-border-radius:10px;
-font-weight:bold;
+.highlight{
+    color:#54c7ff;
+    font-weight:bold;
 }
 
 .cta{
-padding-top:10px;
+    text-align:center;
+    background:linear-gradient(135deg,#172b63,#101936);
+    border-radius:22px;
+    padding:40px 20px;
 }
 
-.cta-box{
-background:linear-gradient(135deg,#ff3038,#ff5932);
-color:white;
-text-align:center;
-padding:50px 20px;
-border-radius:30px;
+.cta h2{
+    margin-bottom:10px;
 }
 
-.cta-box h2{
-font-size:40px;
-line-height:1.1;
-margin-bottom:15px;
-}
-
-.cta-box p{
-margin-bottom:25px;
-}
-
-.cta-box .btn{
-background:white;
-color:#e1262d;
+.cta p{
+    color:#cbd4e8;
+    margin-bottom:20px;
 }
 
 footer{
-margin-top:60px;
-background:#071a38;
-color:#b9c8dc;
-text-align:center;
-padding:35px 20px;
+    text-align:center;
+    padding:28px 15px;
+    background:#070b16;
+    color:#8490aa;
+    font-size:13px;
 }
 
-.footer-logo{
-font-size:23px;
-font-weight:bold;
-color:white;
-margin-bottom:5px;
+footer strong{
+    color:#54c7ff;
 }
 
-.footer-logo span{
-color:#ffd21c;
+@media(max-width:600px){
+
+    .logo{
+        font-size:24px;
+    }
+
+    .hero{
+        padding:45px 18px;
+    }
+
+    .hero h1{
+        font-size:29px;
+    }
+
+    section{
+        padding:35px 15px;
+    }
+
+    .section-title{
+        font-size:23px;
+    }
+
+    .btn{
+        display:block;
+        max-width:280px;
+        margin:9px auto;
+    }
 }
-
-@media(max-width:800px){
-
-.cards{
-grid-template-columns:repeat(2,1fr);
-}
-
-.video-grid{
-grid-template-columns:1fr;
-}
-
-.about{
-grid-template-columns:1fr;
-}
-
-.about-text{
-text-align:center;
-}
-
-}
-
-@media(max-width:520px){
-
-.nav{
-padding:12px 14px;
-}
-
-.logo{
-font-size:20px;
-}
-
-.subscribe{
-padding:9px 13px;
-font-size:13px;
-}
-
-.hero{
-padding:55px 15px 65px;
-}
-
-.hero h1{
-font-size:47px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-section{
-padding:55px 15px;
-}
-
-.cards{
-grid-template-columns:1fr;
-}
-
-.title h2{
-font-size:32px;
-}
-
-.about-text h2{
-font-size:32px;
-}
-
-.cta-box h2{
-font-size:32px;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<div class="nav">
-
-<a href="#beranda" class="logo">
-ALghiffary <span>Animation</span>
-</a>
-
-<a
-class="subscribe"
-href="https://www.youtube.com/@ALghiffaryAnimation"
-target="_blank">
-▶ Subscribe
-</a>
-
-</div>
-
-</header>
-
-
-<section class="hero" id="beranda">
-
-<div class="badge">
-✨ SELAMAT DATANG DI ALghiffary Animation
-</div>
-
-<h1>
-Animasi <span>Lucu</span>,<br>
-Unik & Menghibur!
-</h1>
+</style></head><body><header>
+    <div class="logo">ALghiffary <span>Animation</span></div>
+    <div class="tagline">Dunia animasi • kendaraan • karakter • humor</div>
+</header><section class="hero"><h1>Selamat Datang di <span>ALghiffary Animation</span> 🎬</h1>
 
 <p>
-Nikmati berbagai animasi penuh imajinasi, aksi,
-humor, dan kejutan. Mulai dari kendaraan,
-karakter, hewan, benda unik hingga cerita absurd
-yang bikin penasaran dan ketawa.
+    Nikmati dunia animasi kreatif, lucu, unik, dan penuh kejutan.
+    Dari kendaraan yang hidup hingga karakter aneh dan cerita humor
+    yang menghibur berbagai usia.
 </p>
 
 <div class="buttons">
 
-<a
-class="btn red"
-href="https://www.youtube.com/@ALghiffaryAnimation"
-target="_blank">
-▶ Tonton di YouTube
-</a>
+    <a class="btn btn-youtube"
+       href="https://www.youtube.com/@ALghiffaryAnimation"
+       target="_blank">
+       ▶ Tonton di YouTube
+    </a>
 
-<a
-class="btn white"
-href="#video">
-🎬 Lihat Video
-</a>
+    <a class="btn btn-about" href="#tentang">
+       ℹ Tentang Channel
+    </a>
 
 </div>
 
-</section>
-
-
-<section id="animasi">
-
-<div class="container">
-
-<div class="title">
-
-<h2>
-Dunia <span>Animasi</span>
+</section><section><h2 class="section-title">
+    Apa yang Ada di <span>ALghiffary Animation?</span>
 </h2>
 
-<p>
-Beragam karakter dan cerita kreatif untuk
-menemani waktu santai.
+<p class="section-text">
+    Konten animasi pendek yang dibuat untuk menghadirkan hiburan,
+    imajinasi, humor, dan cerita sederhana yang mudah dinikmati.
 </p>
-
-</div>
-
 
 <div class="cards">
 
-<div class="card">
+    <div class="card">
+        <div class="icon">🚗</div>
+        <h3>Animasi Kendaraan</h3>
+        <p>
+            Mobil, truk, kendaraan unik, dan berbagai mesin
+            yang dibuat seolah-olah memiliki kehidupan sendiri.
+        </p>
+    </div>
 
-<div class="icon">🚗</div>
+    <div class="card">
+        <div class="icon">😂</div>
+        <h3>Humor & Kelucuan</h3>
+        <p>
+            Cerita singkat, ekspresi lucu, kejadian absurd,
+            dan karakter yang bikin penasaran.
+        </p>
+    </div>
 
-<h3>Kendaraan</h3>
+    <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Animasi Kreatif</h3>
+        <p>
+            Eksperimen dengan karakter, benda, hewan,
+            kendaraan, dan berbagai ide unik.
+        </p>
+    </div>
 
-<p>
-Mobil, truk, pesawat, kapal
-dan kendaraan unik lainnya.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">😂</div>
-
-<h3>Humor</h3>
-
-<p>
-Aksi kocak dan cerita absurd
-yang menghibur.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🐻</div>
-
-<h3>Karakter</h3>
-
-<p>
-Karakter unik dengan ekspresi
-dan cerita berbeda.
-</p>
+    <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Video Shorts</h3>
+        <p>
+            Video pendek dengan aksi cepat, visual menarik,
+            dan cerita yang langsung menuju bagian seru.
+        </p>
+    </div>
 
 </div>
 
+</section><section id="tentang"><div class="about">
 
-<div class="card">
+    <h2 class="section-title">
+        Tentang <span>ALghiffary Animation</span>
+    </h2>
 
-<div class="icon">✨</div>
+    <p class="section-text">
+        ALghiffary Animation adalah channel kreatif yang menghadirkan
+        berbagai animasi pendek dengan konsep unik dan menghibur.
+        Kontennya mencakup kendaraan, karakter, benda, hewan,
+        cerita lucu, dan berbagai ide imajinatif.
+    </p>
 
-<h3>Imajinasi</h3>
-
-<p>
-Ide kreatif yang diwujudkan
-menjadi animasi pendek.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="videos" id="video">
-
-<div class="container">
-
-<div class="title">
-
-<h2>
-Video <span>Terbaru</span>
-</h2>
-
-<p>
-Saksikan Shorts dan animasi
-ALghiffary Animation di YouTube.
-</p>
+    <p style="text-align:center;color:#c5cee2;">
+        🎬 <span class="highlight">Kreatif</span> •
+        😂 <span class="highlight">Lucu</span> •
+        🚗 <span class="highlight">Unik</span> •
+        ✨ <span class="highlight">Menghibur</span>
+    </p>
 
 </div>
 
+</section><section><div class="cta">
 
-<div class="video-grid">
+    <h2>Jangan Lewatkan Animasi Terbaru! 🚀</h2>
 
+    <p>
+        Kunjungi channel YouTube ALghiffary Animation
+        dan temukan berbagai video animasi pendek yang unik dan lucu.
+    </p>
 
-<div class="video">
-
-<div class="thumbnail">
-🚛
-</div>
-
-<div class="video-content">
-
-<h3>
-Animasi Kendaraan
-</h3>
-
-<p>
-Kendaraan dengan karakter lucu
-dan aksi tidak terduga.
-</p>
-
-<a
-class="watch"
-href="https://www.youtube.com/@ALghiffaryAnimation"
-target="_blank">
-Tonton di YouTube →
-</a>
+    <a class="btn btn-youtube"
+       href="https://www.youtube.com/@ALghiffaryAnimation"
+       target="_blank">
+       ▶ Kunjungi YouTube
+    </a>
 
 </div>
 
-</div>
+</section><footer>© 2026 <strong>ALghiffary Animation</strong><br>
+Creative Animation & Entertainment
 
-
-<div class="video">
-
-<div class="thumbnail">
-😂
-</div>
-
-<div class="video-content">
-
-<h3>
-Shorts Lucu
-</h3>
-
-<p>
-Cerita singkat, humor,
-ekspresi kocak dan kejutan.
-</p>
-
-<a
-class="watch"
-href="https://www.youtube.com/@ALghiffaryAnimation"
-target="_blank">
-Tonton di YouTube →
-</a>
-
-</div>
-
-</div>
-
-
-<div class="video">
-
-<div class="thumbnail">
-🤖
-</div>
-
-<div class="video-content">
-
-<h3>
-Karakter Unik
-</h3>
-
-<p>
-Tokoh dan benda unik
-menjadi karakter animasi.
-</p>
-
-<a
-class="watch"
-href="https://www.youtube.com/@ALghiffaryAnimation"
-target="_blank">
-Tonton di YouTube →
-</a>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="tentang">
-
-<div class="container">
-
-<div class="about">
-
-
-<div class="about-box">
-
-<div class="about-icon">
-🎬
-</div>
-
-<h2>
-ALghiffary <span>Animation</span>
-</h2>
-
-<p>
-Creative • Funny • Unique
-</p>
-
-</div>
-
-
-<div class="about-text">
-
-<h2>
-Tempat berkumpulnya
-animasi penuh imajinasi.
-</h2>
-
-<p>
-ALghiffary Animation menghadirkan
-video animasi pendek yang kreatif,
-lucu, unik dan menghibur.
-</p>
-
-<div class="check">
-✅ Animasi pendek dan menghibur
-</div>
-
-<div class="check">
-✅ Karakter dan kendaraan unik
-</div>
-
-<div class="check">
-✅ Cerita kreatif dan humoris
-</div>
-
-<div class="check">
-✅ Konten terbaru di YouTube
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="cta">
-
-<div class="container">
-
-<div class="cta-box">
-
-<h2>
-Suka animasi unik dan lucu?
-</h2>
-
-<p>
-Kunjungi channel ALghiffary Animation
-dan temukan Shorts terbaru.
-</p>
-
-<a
-class="btn"
-href="https://www.youtube.com/@ALghiffaryAnimation"
-target="_blank">
-▶ Kunjungi Channel YouTube
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<div class="footer-logo">
-ALghiffary <span>Animation</span>
-</div>
-
-<p>
-© 2026 ALghiffary Animation
-</p>
-
-<p>
-Creative • Funny • Unique
-</p>
-
-</footer>
-
-</body>
+</footer></body>
 </html>
